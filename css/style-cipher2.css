@@ -1,0 +1,285 @@
+/*------------------------------------------------------------------
+    IMPORT FONTS
+-------------------------------------------------------------------*/
+
+@import url(//db.onlinewebfonts.com/c/ccd76b2ce7762ead513163d593773bb2?family=Logger);
+@import url(//db.onlinewebfonts.com/c/9d7b0fb304409fabceb9c59a1de12720?family=Glass+Antiqua);
+@import url(//db.onlinewebfonts.com/c/dd080621b5dfabb5d6fd20f0205c15b5?family=GlazKrak);
+
+
+/*=== Page Background Style ===*/
+body{
+    background-color: #120708;
+	margin: 0px;
+	padding: 0px;
+}
+
+#cipher-container{
+	margin: 3px;
+	padding: 17px;
+}
+
+.logger {
+	font-family: Logger;
+}
+
+.glass-antiqua {
+	font-family: "Glass+Antiqua";
+}
+
+.glazkrak {
+	font-family: GlazKrak;
+}
+
+
+#caesar{
+    text-align: center;
+    padding: 37px 20px 17px 20px;
+    margin-top: 0px;
+    color: #F09F45;
+    font-size: 4.7rem;
+    font-weight: 670;
+}
+
+.about-cipher {
+	color: aliceblue;
+    width: 97%;
+    text-align: center;	
+	font-family: fontawesome;
+    font-size: 1.1rem;
+	padding: 12px 20px 12px 20px;
+    margin: 0px auto auto auto;
+}
+
+#rot13{
+    text-align: center;
+    padding: 3px 4px 27px 4px;
+	margin: 1px;
+    color: red;
+    font-size: 3.7rem;
+    font-weight: 900;
+}
+
+#rot14{
+    text-align: center;
+    padding: 3px 0px 27px 0px;
+	margin: 1px;
+    color: #D5FD73;
+    font-size: 2.3rem;
+    font-weight: 500;
+}
+
+/* ==== ENCRYPT BUTTON ==== */
+#btn-Encrypt{
+    min-width: 179px;
+	min-height: 40px;
+	color: white;
+    background-color: darkviolet;
+    border: 1px solid aliceblue;
+    border-radius: 7px;
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 0.75rem 2rem;    
+    margin: 20px;
+    display: inline-block;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+
+   -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.30);
+   -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.30);
+   -ms-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.30);
+   -o-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.30);
+   box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.30);
+   z-index: 111;
+   -webkit-transition: all 1s ease-in-out;
+   -moz-transition: all 1s ease-in-out;
+   -ms-transition: all 1s ease-in-out;
+   -o-transition: all 1s ease-in-out;
+   transition: all 1s ease-in-out;
+}
+  
+#btn-Encrypt:hover{
+    color: aliceblue;
+    background-color: #cf54eb;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.4);
+}
+
+#btn-Decrypt{
+    min-width: 179px;
+	min-height: 40px;
+	color: yellow;
+    background-color: darkgreen;
+    border: 1px solid aliceblue;
+    border-radius: 7px;
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 0.75rem 2rem;    
+    margin: 20px;
+    display: inline-block;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+
+   -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.30);
+   -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.30);
+   -ms-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.30);
+   -o-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.30);
+   box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.30);
+   z-index: 111;
+   -webkit-transition: all 1s ease-in-out;
+   -moz-transition: all 1s ease-in-out;
+   -ms-transition: all 1s ease-in-out;
+   -o-transition: all 1s ease-in-out;
+   transition: all 1s ease-in-out;
+}
+  
+#btn-Decrypt:hover{
+    color: #62F473;
+    background-color: #243E07;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.4);
+}
+
+/*-- input placeholder --*/
+::placeholder{
+    color: #17031a;
+	font-family: Logger;
+	font-size: 1.4rem;
+    font-weight: 400;
+}
+
+
+/* === input Text and background === */
+#text-input{
+    width: 70vw;
+    height: 50px;
+    margin: 0px auto auto auto;
+    padding: 0px 4px;
+	font-family: glazkrak;
+    color: #3b0a41;
+    border-color: white;
+    border-radius: 5px;
+    background-color: #aadef7;
+    font-size: 2rem;
+    text-align: center;
+}    
+
+/* === output Text and background === */
+#text-output{
+    width: 97%;
+    padding: 17px;
+    margin: 0px auto auto auto;
+	font-family: fontawesome;
+    color: #d8d8d8;
+    border-color: white;
+    border-radius: 5px;
+    background-color: #4b093e;
+    font-size: 2rem;
+    text-align: center;
+}    
+
+.cryptline {
+	margin: 47px;
+}
+
+#text-input2{
+    width: 70vw;
+    height: 50px;
+    margin: 0px auto auto auto;
+    padding: 0px 4px;
+	font-family: glazkrak;
+    color: #3b0a41;
+    border-color: white;
+    border-radius: 5px;
+    background-color: #aadef7;
+    font-size: 2rem;
+    text-align: center;
+}    
+
+/* === output Text and background === */
+#text-output2{
+    width: 97%;
+    padding: 17px;
+    margin: 0px auto auto auto;
+	font-family: fontawesome;
+    color: #d8d8d8;
+    border-color: white;
+    border-radius: 5px;
+    background-color: #4b093e;
+    font-size: 2rem;
+    text-align: center;
+}    
+
+.made-with{
+    padding: 40px 0px; 
+    text-align:center; 
+}
+
+#achugwo{
+    color: pink;
+	margin: 9px;
+	font-family: "GlassAntiqua Regular";
+    font-size: 1rem;
+	text-decoration: none;
+}
+
+#achugwo:hover{
+    color: #EBF869;
+}
+
+
+/**** Social icons ****/
+.social-icons ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+	list-style: none;
+	margin-right: 22px;
+}
+
+#asBanner, #facebook, #github, #instagram, #pinterest, #google, #flickr, 
+#linkedin, #twitter, #pictorem, #mini-apps, #cipher-i, #cipher-iii {
+    margin: 9px;
+	text-decoration: none;
+	font-style: italic;
+}
+
+#facebook:hover, #github:hover, #instagram:hover, #pinterest:hover, #google:hover, #flickr:hover, 
+#linkedin:hover, #twitter:hover, #pictorem:hover, #mini-apps:hover, #cipher-i:hover, #cipher-iii:hover {
+    color: orange;
+}
+
+#cipher-ii {
+    margin: 9px;
+	color: orange;
+	text-decoration: none;
+	font-style: italic;
+}
+
+
+@media(max-width: 600px) {
+    body{
+        padding-top: 0px;
+    }
+	
+    #asBanner, #facebook, #github, #instagram, #pinterest, #google, #flickr, 
+	#linkedin, #twitter, #pictorem, #mini-apps {
+    margin: 7px;
+	}
+}
+
+@media(max-width: 500px) {
+    body{
+        padding-top: 0px;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    input{
+        width: 50vw;
+        font-size: 1.4rem;
+    }
+
+}
+
